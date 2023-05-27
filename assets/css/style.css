@@ -966,45 +966,50 @@ body.block {
 }
 
 .popup_offer.active .popup_offer__content {
-    width: 790px;
-    height: 684px;
+  width: 614px;
+height: 568px;
     visibility: visible;
     opacity: 1;
 }
 
 .popup_offer__title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 35px;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 29px;
 
-    /* шрифт2 */
+/* шрифт2 */
 
-    color: #01101F;
+color: #01101F;
 
-    margin-bottom: 54px;
+    margin-bottom: 37px;
     margin-top: 88px;
     text-align: center;
-    padding: 0 70px;
+    padding: 0 80px;
 }
 
 .popup_offer__title strong {
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 35px;
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 29px;
 
-    /* шрифт2 */
+/* шрифт2 */
 
-    color: #01101F;
+color: #01101F;
 }
 
 .popup_offer__close {
     position: absolute;
     top: 39px;
     right: 46px;
+}
+
+.popup_offer__close img {
+   width: 20px;
+height: 20px;
 }
 
 .popup_offer__content_form {
@@ -1023,36 +1028,36 @@ body.block {
 
 .uname, .uphone {
     background: #FFFFFF;
-    width: 488px;
-    height: 78px;
+    width: 397px;
+height: 66px;
 
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 29px;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
 
-    /* акцент */
+/* акцент */
 
-    color: #0D4B8C;
+color: #0D4B8C;
     padding: 0 26px;
 }
 
 .uphone {
     margin-bottom: 38px;
-    margin-top: 54px;
+    margin-top: 44px;
 }
 
 .uname::placeholder, .uphone::placeholder {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 29px;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
 
-    /* акцент */
+/* акцент */
 
-    color: #0D4B8C;
+color: #0D4B8C;
 }
 
 .check_bot {
@@ -1062,7 +1067,7 @@ body.block {
     display: flex;
     align-items: center;
 
-    margin-right: 285px;
+    margin-right: 219px;
 }
 
 .check_bot .checkbox-popup {
@@ -1072,9 +1077,9 @@ body.block {
 }
 
 .apply-button-checkbox {
-    border: 2px solid #01101F;
-    width: 44px;
-    height: 44px;
+    border: 1px solid #01101F;
+    width: 25px;
+    height: 25px;
 }
 
 .checkbox-popup:checked + .apply-button-checkbox .apply-button-checked {
@@ -1116,19 +1121,24 @@ body.block {
 
 .button_offer {
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 126.52%;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 158.52%;
+/* identical to box height, or 29px */
 
-    color: #FFFFFF;
+text-transform: capitalize;
+
+/* шрифт */
+
+color: #FFFFFF;
     background: #0D4B8C;
-    width: 260px;
-    height: 78px;
+  width: 214px;
+height: 63px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 74px;
+    margin-top: 34px;
 }
 
 /*popup-thanks*/

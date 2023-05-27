@@ -698,16 +698,16 @@ body.block {
 .questions_button {
     background: #0D4B8C;
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 126.52%;
-    /* identical to box height, or 32px */
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 126.52%;
+/* identical to box height, or 32px */
 
 
-    color: #FFFFFF;
-    width: 382px;
-    height: 102px;
+color: #FFFFFF;
+    width: 334px;
+height: 102px;
     display: flex;
     justify-content: center;
     align-items: center;

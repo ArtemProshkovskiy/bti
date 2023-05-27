@@ -945,6 +945,7 @@ body.block {
     visibility: hidden;
     opacity: 0;
     transition: all ease 0.3s;
+    z-index: 10010;
 }
 
 .popup_offer.active {

@@ -185,7 +185,7 @@ body.block {
 
 .phone_number:before {
     content: '';
-    background: url("/assets/img/header/phone.svg") no-repeat;
+    background: url("../img/header/phone.svg") no-repeat;
     width: 23px;
     height: 26px;
 
@@ -481,14 +481,14 @@ body.block {
     position: absolute;
     top: 0;
     left: -56px;
-    background: url("/assets/img/information/phone_number.svg") no-repeat;
+    background: url("../img/information/phone_number.svg") no-repeat;
     width: 100%;
     height: 100%;
     transition: all ease 0.3s;
 }
 
 .information_content__left a:hover:before {
-    background: url("/assets/img/information/phone_number-after.svg") no-repeat
+    background: url("../img/information/phone_number-after.svg") no-repeat
 }
 
 .information_content__left a:nth-child(3), .information_content__right a:nth-child(3) {
@@ -522,7 +522,7 @@ body.block {
     left: -77px;
 
     content: '';
-    background: url("/assets/img/information/gmail_before.svg") no-repeat;
+    background: url("../img/information/gmail_before.svg") no-repeat;
     width: 43px;
     height: 43px;
     background-size: contain;
@@ -535,7 +535,7 @@ body.block {
     left: -75px;
 
     content: '';
-    background: url("/assets/img/information/vider_before.svg") no-repeat;
+    background: url("../img/information/vider_before.svg") no-repeat;
     width: 40px;
     height: 40px;
     background-size: contain;
@@ -548,7 +548,7 @@ body.block {
     left: -75px;
 
     content: '';
-    background: url("/assets/img/information/telegram_before.svg") no-repeat;
+    background: url("../img/information/telegram_before.svg") no-repeat;
     width: 40px;
     height: 40px;
     background-size: contain;
@@ -557,7 +557,7 @@ body.block {
 
 
 .information_content__right a:hover:nth-child(3):before {
-    background: url("/assets/img/footer/vider.svg") no-repeat;
+    background: url("../img/footer/vider.svg") no-repeat;
     width: 38px;
     height: 38px;
     background-size: contain;
@@ -565,14 +565,14 @@ body.block {
 
 
 .information_content__right a:hover:nth-child(2):before {
-    background: url("/assets/img/information/gmail.svg") no-repeat;
+    background: url("../img/information/gmail.svg") no-repeat;
     width: 40px;
     height: 40px;
     background-size: contain;
 }
 
 .information_content__right a:hover:nth-child(4):before {
-    background: url("/assets/img/information/telegram.svg") no-repeat;
+    background: url("../img/information/telegram.svg") no-repeat;
     width: 40px;
     height: 40px;
     background-size: contain;
@@ -883,7 +883,7 @@ body.block {
     top: -5px;
     left: -77px;
     content: '';
-    background: url('/assets/img/header/phone.svg') no-repeat;
+    background: url('../img/header/phone.svg') no-repeat;
     width: 30px;
     height: 30px;
     background-size: contain;
@@ -894,7 +894,7 @@ body.block {
     top: -5px;
     left: -77px;
     content: '';
-    background: url('/assets/img/footer/vider.svg') no-repeat;
+    background: url('../img/footer/vider.svg') no-repeat;
     width: 40px;
     height: 40px;
     background-size: contain;
@@ -905,7 +905,7 @@ body.block {
     top: -5px;
     left: -77px;
     content: '';
-    background: url('/assets/img/information/telegram.svg') no-repeat;
+    background: url('../img/information/telegram.svg') no-repeat;
     width: 38px;
     height: 38px;
     background-size: contain;

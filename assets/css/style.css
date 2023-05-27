@@ -1570,19 +1570,19 @@ body.block {
 
 .popup_question__title {
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 30px;
-line-height: 35px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
 
-/* шрифт2 */
+    /* шрифт2 */
 
-color: #01101F;
-margin-bottom: 54px;
+    color: #01101F;
+    margin-bottom: 54px;
 }
 
 .button_offer__question {
-font-family: 'Roboto';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
     font-size: 25px;
@@ -1601,5 +1601,208 @@ font-family: 'Roboto';
     position: absolute;
     top: 39px;
     right: 46px;
+}
+
+
+/*about page*/
+
+.about__title {
+    margin-top: 68px;
+    margin-bottom: 53px;
+}
+
+.about__title h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 126.52%;
+    /* or 44px */
+
+    text-align: center;
+
+    /* шрифт2 */
+
+    color: #01101F;
+    margin-bottom: 21px;
+}
+
+.about__title h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 126.52%;
+    /* identical to box height, or 32px */
+
+    text-align: center;
+
+    /* шрифт2 */
+
+    color: #01101F;
+}
+
+.about_information:last-child {
+    margin-bottom: 68px;
+}
+
+.about_information:last-child .about_information__content ul li{
+    border-bottom: 1px solid #01101F;
+}
+
+.about__title_topic h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 126.52%;
+    /* or 38px */
+
+
+    /* шрифт */
+    color: #FFFFFF;
+    padding: 32px 0;
+}
+
+.about__title_topic {
+    width: 100%;
+    background: #0D4B8C;
+}
+
+.about_information__content_elem {
+    display: flex;
+    padding: 40px 0;
+    border-bottom: 1px solid #01101F;
+}
+
+.about_information__content_elem:last-child {
+    border-bottom: 1px solid transparent;
+}
+
+.about_information__content ul li span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 126.52%;
+    /* or 25px */
+
+    /* шрифт2 */
+
+    color: #01101F;
+    width: 400px;
+}
+
+.about_information__content ul li p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 126.52%;
+    /* or 25px */
+
+
+    /* шрифт2 */
+
+    color: #01101F;
+}
+
+.about_information__content_elem a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 126.52%;
+    /* or 25px */
+
+
+    /* шрифт2 */
+
+    color: #01101F;
+}
+
+.about_information_content_main, .about_information_content_ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.about_information_content_main span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 126.52%;
+    /* or 25px */
+
+
+    /* шрифт2 */
+
+    color: #01101F;
+    margin-bottom: 30px;
+}
+
+.about_information_content_main strong {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 126.52%;
+    /* or 25px */
+
+
+    /* шрифт2 */
+
+    color: #01101F;
+    margin-bottom: 28px;
+}
+
+.about_information__content__column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.about_information__content_ul__content li {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 182.02%;
+    /* or 36px */
+
+
+    /* шрифт2 */
+
+    color: #01101F;
+    list-style: disc;
+}
+
+.about_information__content_ul__content {
+    margin-left: 33px;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.phone_button {
+    position: fixed;
+    bottom: 55px;
+    right: 77px;
+    animation: shake 0.5s infinite;
+}
+
+.phone_button {
+    position: fixed;
+    bottom: 55px;
+    right: 77px;
+    animation: pulse 1s infinite;
+    transform-origin: center;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
 

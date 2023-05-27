@@ -754,19 +754,19 @@ height: 102px;
 }
 
 .departament_address a {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 126.52%;
-    /* or 32px */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 126.52%;
+/* or 32px */
 
-    text-decoration-line: underline;
+text-decoration-line: underline;
+
+/* акцент */
+
+color: #0D4B8C;
     text-underline-offset: 8px;
-
-    /* акцент */
-
-    color: #0D4B8C;
     margin-top: 15px;
 }
 

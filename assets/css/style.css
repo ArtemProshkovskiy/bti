@@ -1147,6 +1147,7 @@ body.block {
     visibility: hidden;
     opacity: 0;
     transition: all ease 0.3s;
+    z-index: 10100;
 }
 
 .popup_thanks.active {

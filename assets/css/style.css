@@ -245,15 +245,15 @@ body.block {
 
 /*offer*/
 .offers {
-    margin-top: 133px;
-    margin-bottom: 172px;
+    margin-top: 128px;
+    margin-bottom: 134px;
 }
 
 .offers_content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 98px;
+    margin-top: 104px;
 }
 
 .offers_content__block {
@@ -266,7 +266,6 @@ body.block {
     height: 295px;
     margin-right: 70px;
     margin-bottom: 70px;
-    border: 1px solid #01101F;
     background: #0D4B8C;
 }
 
@@ -305,21 +304,19 @@ body.block {
 
 .offers_content__block a {
     display: inline-block;
-    font-family: 'Inter';
+    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 158.52%;
-    /* identical to box height, or 32px */
+    /* identical to box height, or 29px */
 
     text-align: center;
     text-transform: capitalize;
 
     color: #0D4B8C;
-    padding: 18px 50px;
+    padding: 15px 35px;
     background: #FFFFFF;
-    box-shadow: 0px 4px 0px #FFFFFF;
-    border: 1px solid transparent;
     align-self: center;
 }
 
@@ -334,7 +331,6 @@ body.block {
     /* or 32px */
 
     text-align: center;
-    text-transform: uppercase;
     color: #01101F;
 }
 
@@ -966,22 +962,22 @@ body.block {
 }
 
 .popup_offer.active .popup_offer__content {
-  width: 614px;
-height: 568px;
+    width: 614px;
+    height: 568px;
     visibility: visible;
     opacity: 1;
 }
 
 .popup_offer__title {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 25px;
-line-height: 29px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
 
-/* шрифт2 */
+    /* шрифт2 */
 
-color: #01101F;
+    color: #01101F;
 
     margin-bottom: 37px;
     margin-top: 88px;
@@ -991,25 +987,25 @@ color: #01101F;
 
 .popup_offer__title strong {
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 25px;
-line-height: 29px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
 
-/* шрифт2 */
+    /* шрифт2 */
 
-color: #01101F;
+    color: #01101F;
 }
 
 .popup_offer__close {
     position: absolute;
-    top: 39px;
-    right: 46px;
+    top: 31px;
+    right: 35px;
 }
 
 .popup_offer__close img {
-   width: 20px;
-height: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 .popup_offer__content_form {
@@ -1029,17 +1025,17 @@ height: 20px;
 .uname, .uphone {
     background: #FFFFFF;
     width: 397px;
-height: 66px;
+    height: 66px;
 
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
 
-/* акцент */
+    /* акцент */
 
-color: #0D4B8C;
+    color: #0D4B8C;
     padding: 0 26px;
 }
 
@@ -1049,15 +1045,15 @@ color: #0D4B8C;
 }
 
 .uname::placeholder, .uphone::placeholder {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
 
-/* акцент */
+    /* акцент */
 
-color: #0D4B8C;
+    color: #0D4B8C;
 }
 
 .check_bot {
@@ -1121,20 +1117,20 @@ color: #0D4B8C;
 
 .button_offer {
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 158.52%;
-/* identical to box height, or 29px */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 158.52%;
+    /* identical to box height, or 29px */
 
-text-transform: capitalize;
+    text-transform: capitalize;
 
-/* шрифт */
+    /* шрифт */
 
-color: #FFFFFF;
+    color: #FFFFFF;
     background: #0D4B8C;
-  width: 214px;
-height: 63px;
+    width: 214px;
+    height: 63px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1247,7 +1243,7 @@ height: 63px;
 
 .popup_fast.active {
     width: 100%;
-    height: 280px;
+    height: 190px;
     visibility: visible;
     opacity: 1;
     transform: translate(-50%, 0);
@@ -1422,12 +1418,6 @@ height: 63px;
     color: #0D4B8C;
 }
 
-.popup_fast__content_form__row {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 49px;
-}
-
 .button_offer__fast {
     background: #0D4B8C;
     font-family: 'Roboto';
@@ -1447,7 +1437,6 @@ height: 63px;
 
 .popup_fast__content_form {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -1656,7 +1645,7 @@ height: 63px;
     margin-bottom: 68px;
 }
 
-.about_information:last-child .about_information__content ul li{
+.about_information:last-child .about_information__content ul li {
     border-bottom: 1px solid #01101F;
 }
 
@@ -1811,8 +1800,14 @@ height: 63px;
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 

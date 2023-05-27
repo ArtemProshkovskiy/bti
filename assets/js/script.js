@@ -173,7 +173,7 @@ const popup_fastBtn = document.querySelector('.popup_fast .button_offer__fast')
 document.addEventListener('DOMContentLoaded', function () {
     setTimeout(function () {
         popup_fast.classList.add('active');
-    }, 15000);
+    }, 1000);
 });
 
 popup_fastClose.addEventListener('click', function (e) {

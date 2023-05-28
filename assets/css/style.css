@@ -430,6 +430,7 @@ body.block {
 .information_content {
     display: flex;
     justify-content: space-between;
+    padding: 0 125px;
 }
 
 .information_content__left, .information_content__right {

@@ -317,10 +317,15 @@ body.block {
     padding: 15px 35px;
     background: #FFFFFF;
     align-self: center;
+    border: 1px solid transparent;
     transition: all ease 0.3s;
 }
 
-
+.offers_content__block a:hover {
+    color: #FFFFFF;
+    background: #0D4B8C;
+    border: 1px solid #FFFFFF;
+}
 
 
 .offers_title {
@@ -2018,7 +2023,6 @@ body.block {
 
 .services_content__form_filter button {
     background: #0D4B8C;
-    border: 1px solid #FFFFFF;
     width: 305px;
     height: 78px;
     font-family: 'Roboto';
@@ -2032,6 +2036,20 @@ body.block {
     /* шрифт */
 
     color: #FFFFFF;
+    border: 1px solid  transparent;
+    transition: all ease 0.3s;
+}
+
+.services_content__form_filter button:hover {
+     background: #FFFFFF;
+     color: #0D4B8C;
+    border: 1px solid  #0D4B8C;
+}
+
+.services_content__form_filter button.active {
+    background: #FFFFFF;
+     color: #0D4B8C;
+    border: 1px solid  #0D4B8C;
 }
 
 .services_content__post li {

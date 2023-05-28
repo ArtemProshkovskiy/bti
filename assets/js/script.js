@@ -3,6 +3,23 @@ const languagePopup = document.querySelector('.menu-social__lang');
 const languages = document.querySelectorAll('.menu-social__lang-drop a');
 const body = document.querySelector('body');
 
+// Получаем все кнопки внутри элемента с классом "services_content__form_filter"
+var buttons = document.querySelectorAll('.services_content__form_filter button');
+
+// Добавляем обработчик события для каждой кнопки
+buttons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    // Удаляем класс "active" у всех кнопок
+    buttons.forEach(function(btn) {
+      btn.classList.remove('active');
+    });
+
+    // Добавляем класс "active" на кнопку, на которую было нажато
+    this.classList.add('active');
+  });
+});
+
+
 languageButtons.forEach(function (languageButton) {
     languageButton.addEventListener('click', function (e) {
         languagePopup.classList.toggle('active');

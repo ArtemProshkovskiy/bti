@@ -191,39 +191,7 @@ popup_questionClose.addEventListener('click', function (e) {
     body.classList.remove('block');
 });
 
-// Функция для сброса reCAPTCHA перед каждой отправкой формы
-function resetRecaptcha() {
-  grecaptcha.reset();
-}
 
-var fast = function (token) {
- popup_fastThanks.classList.add('active');
-    popup_fast.classList.remove('active');
-    body.classList.add('block');
-  console.log(fast);
-  resetRecaptcha();
-};
-var offer = function (token) {
-  popup_thanks.classList.add('active');
-    popup_offer.classList.remove('active');
-    body.classList.add('block');
-  console.log(offer);
-  resetRecaptcha();
-};
-var onClick = function (token) {
-  popup_questionThanks.classList.add('active');
-  popup_question.classList.remove('active');
-  body.classList.add('block');
-  console.log(true);
-  resetRecaptcha();
-};
-
-var onloadCallback = function () {
-  grecaptcha.render('button_offer__question', {
-    'sitekey': '6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj',
-    'callback': onClick
-  });
-};
 
 var onloadCallback2 = function () {
   grecaptcha.render('button_offer', {
@@ -231,6 +199,7 @@ var onloadCallback2 = function () {
     'callback': offer
   });
 };
+
 var onloadCallback3 = function () {
   grecaptcha.render('button_offer__fast', {
     'sitekey': '6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj',
@@ -238,6 +207,38 @@ var onloadCallback3 = function () {
   });
 };
 
+var onloadCallback1 = function () {
+  grecaptcha.render('button_offer__question', {
+    'sitekey': '6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj',
+    'callback': onClick
+  });
+};
+
+// // Функция для сброса reCAPTCHA перед каждой отправкой формы
+// function resetRecaptcha() {
+//   grecaptcha.reset();
+// }
+
+var fast = function (token) {
+  popup_fastThanks.classList.add('active');
+  popup_fast.classList.remove('active');
+  body.classList.add('block');
+  console.log(fast);
+};
+
+var offer = function (token) {
+  popup_thanks.classList.add('active');
+  popup_offer.classList.remove('active');
+  body.classList.add('block');
+  console.log(offer);
+};
+
+var onClick = function (token) {
+  popup_questionThanks.classList.add('active');
+  popup_question.classList.remove('active');
+  body.classList.add('block');
+  console.log(true);
+};
 
 
 

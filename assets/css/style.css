@@ -1014,6 +1014,7 @@ body.block {
     /* шрифт2 */
 
     color: #01101F;
+    text-transform: lowercase;
 }
 
 .popup_offer__close {

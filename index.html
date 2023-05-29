@@ -12,6 +12,7 @@
           rel="stylesheet">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
 <div class="wrapper">
@@ -175,7 +176,10 @@
                     <label class="hidden_label" for="name">Ім'я</label>
                     <input id="name" type="text" class="uname" name="uname" placeholder="Ваше ім’я ">
                     <label class="hidden_label" for="uphone">Телефон</label>
-                    <input id="uphone" type="text" class="uphone" name="uphone" placeholder="Телефон">
+                    <label class="phone_validate_offer">
+                        <input id="uphone" type="text" class="uphone" name="uphone" placeholder="Телефон">
+                        <label class="no_validate">Некоректний номер телефону,спробуйте ще раз</label>
+                    </label>
                     <button class="g-recaptcha button_offer" data-sitekey="6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj"
                             data-callback="offer">Замовити
                     </button>
@@ -202,9 +206,12 @@
                             <span class="arrow up"></span>
                             <span class="arrow down"></span>
                         </div>
-                        <label class="hidden_label" for="phone_fast">Телефон</label>
-                        <input id="phone_fast" type="text" class="phone_fast" name="phone_fast"
+                        <label class="hidden_label" for="uphone">Телефон</label>
+                        <label class="phone_validate_fast">
+                             <input id="phone_fast" type="text" class="phone_fast" name="phone_fast"
                                placeholder="Ваш телефон">
+                            <label class="no_validate">Некоректний номер телефону,спробуйте ще раз</label>
+                        </label>
                         <button class="g-recaptcha button_offer__fast"
                                 data-sitekey="6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj" data-callback="fast">Чекаю
                             дзвінка
@@ -219,8 +226,11 @@
                 <h3 class="popup_question__title">Залиште своє запитання</h3>
                 <form class="popup_offer__content_form">
                     <label class="hidden_label" for="question_phone">Телефон</label>
-                    <input id="question_phone" type="text" class="question_phone" name="question_phone"
-                           placeholder="Телефон">
+                    <label class="phone_validate_question">
+                        <input id="question_phone" type="text" class="question_phone" name="question_phone"
+                               placeholder="Телефон">
+                        <label class="no_validate">Некоректний номер телефону,спробуйте ще раз</label>
+                    </label>
                     <label class="hidden_label" for="question_comment">Ваше запитання</label>
                     <textarea id="question_comment" class="question_comment" name="question_comment"
                               placeholder="Ваше запитання"></textarea>
@@ -315,9 +325,9 @@
         </div>
     </footer>
 </div>
-
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.6/dist/jquery.inputmask.min.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
 </html>

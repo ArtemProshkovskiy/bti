@@ -166,7 +166,7 @@ const popup_fastBtn = document.querySelector('.popup_fast .button_offer__fast')
 document.addEventListener('DOMContentLoaded', function () {
     setTimeout(function () {
         popup_fast.classList.add('active');
-    }, 15000);
+    }, 1000);
 });
 
 popup_fastClose.addEventListener('click', function (e) {
@@ -192,62 +192,6 @@ popup_questionClose.addEventListener('click', function (e) {
 });
 
 
-var offer = function (token) {
-    popup_thanks.classList.add('active');
-    popup_offer.classList.remove('active');
-    body.classList.add('block');
-    var count = 0;
-    $(".g-recaptcha").each(function () {
-        grecaptcha.reset(count);
-        count++;
-    });
-};
-
-var onClick = function (token) {
-    popup_questionThanks.classList.add('active');
-    popup_question.classList.remove('active');
-    body.classList.add('block');
-    var count = 0;
-    $(".g-recaptcha").each(function () {
-        grecaptcha.reset(count);
-        count++;
-    });
-};
-
-var fast = function (token) {
-    popup_fastThanks.classList.add('active');
-    popup_fast.classList.remove('active');
-    body.classList.add('block');
-    var count = 0;
-    $(".g-recaptcha").each(function () {
-        grecaptcha.reset(count);
-        count++;
-    });
-};
-
-var onloadCallback2 = function () {
-    grecaptcha.render('button_offer', {
-        'sitekey': '6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj',
-        'callback': offer
-    });
-};
-
-var onloadCallback3 = function () {
-    grecaptcha.render('button_offer__fast', {
-        'sitekey': '6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj',
-        'callback': fast
-    });
-};
-
-var onloadCallback1 = function () {
-    grecaptcha.render('button_offer__question', {
-        'sitekey': '6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj',
-        'callback': onClick
-    });
-};
-var reCaptchaElements = document.querySelectorAll(".g-recaptcha");
-
-
 (function () {
     const anchors = document.querySelectorAll('a[href*="#"]')
     for (let anchor of anchors) {
@@ -262,26 +206,149 @@ var reCaptchaElements = document.querySelectorAll(".g-recaptcha");
     }
 })();
 
-function validatePhoneNumber() {
-    var phoneNumberInput = document.getElementById("question_phone");
-    var phoneNumber = phoneNumberInput.value.trim();
+var phonevalidate = document.querySelector('.phone_validate_question');
+var phonevalidateInputfast = document.querySelector('.phone_validate_fast');
+var phonevalidateInputoffer = document.querySelector('.phone_validate_offer');
+var regex = /^((\+?3)?8)?((0\(\d{2}\)?)|(\(0\d{2}\))|(0\d{2}))\d{7}$/;
+var phoneNumberInput = document.getElementById("question_phone");
+var fastNumberInput = document.getElementById("phone_fast");
+var uphoneNumberInput = document.getElementById("uphone");
 
-    var regex = /^((\+?3)?8)?((0\(\d{2}\)?)|(\(0\d{2}\))|(0\d{2}))\d{7}$/;
+function validatePhoneNumber1() {
+    var phoneNumber = phoneNumberInput.value.trim().replace(/[() ]/g, '');
+
 
     if (regex.test(phoneNumber)) {
-      console.log("Номер телефона действителен.");
-      // Действия при валидном номере телефона
+        console.log("Номер телефона действителен.");
+        phonevalidate.classList.remove('active');
+
+        function onClick(token) {
+            var count = 0;
+            $(".g-recaptcha").each(function () {
+                grecaptcha.reset(count);
+                count++;
+            });
+        }
+
+// Определение onloadCallback1 глобально
+        function onloadCallback1() {
+            grecaptcha.render('button_offer__question', {
+                'sitekey': '6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj',
+                'callback': onClick
+            });
+        }
+
+        popup_questionThanks.classList.add('active');
+        popup_question.classList.remove('active');
+        body.classList.add('block');
+
     } else {
-      console.log("Номер телефона недействителен.");
-      // Действия при невалидном номере телефона
+        console.log("Номер телефона недействителен.");
+        phonevalidate.classList.add('active');
     }
-  }
+}
 
-  // Добавление слушателя события на кнопку "Замовити"
-  var button = document.querySelector(".button_offer__question");
-  button.addEventListener("click", function(event) {
-    event.preventDefault(); // Отменяем отправку формы
+function validatePhoneNumber2() {
+    var phoneNumber = uphoneNumberInput.value.trim().replace(/[() ]/g, '');
 
-    validatePhoneNumber();
-  });
+
+    if (regex.test(phoneNumber)) {
+        console.log("Номер телефона действителен.");
+        phonevalidateInputoffer.classList.remove('active');
+
+
+        function offer(token) {
+            var count = 0;
+            $(".g-recaptcha").each(function () {
+                grecaptcha.reset(count);
+                count++;
+            });
+        }
+
+
+        var onloadCallback3 = function () {
+            grecaptcha.render('button_offer__fast', {
+                'sitekey': '6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj',
+                'callback': offer
+            });
+        };
+
+        popup_thanks.classList.add('active');
+        popup_offer.classList.remove('active');
+        body.classList.add('block');
+    } else {
+        console.log("Номер телефона недействителен.");
+        phonevalidateInputoffer.classList.add('active');
+    }
+}
+
+function validatePhoneNumber3() {
+    var phoneNumber = fastNumberInput.value.trim().replace(/[() ]/g, '');
+
+
+    if (regex.test(phoneNumber)) {
+        console.log("Номер телефона действителен.");
+        phonevalidateInputfast.classList.remove('active');
+
+
+        function fast(token) {
+            var count = 0;
+            $(".g-recaptcha").each(function () {
+                grecaptcha.reset(count);
+                count++;
+            });
+        }
+
+
+        var onloadCallback3 = function () {
+            grecaptcha.render('button_offer__fast', {
+                'sitekey': '6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj',
+                'callback': fast
+            });
+        };
+
+        popup_fastThanks.classList.add('active');
+        popup_fast.classList.remove('active');
+        body.classList.add('block');
+    } else {
+        console.log("Номер телефона недействителен.");
+        phonevalidateInputfast.classList.add('active');
+    }
+}
+
+
+$(document).ready(function () {
+    $("#question_phone").inputmask("+380(99) 999 99 99", {
+        placeholder: "_",
+        clearMaskOnLostFocus: false
+    });
+    $("#phone_fast").inputmask("+380(99) 999 99 99", {
+        placeholder: "_",
+        clearMaskOnLostFocus: false
+    });
+    $("#uphone").inputmask("+380(99) 999 99 99", {
+        placeholder: "_",
+        clearMaskOnLostFocus: false
+    });
+
+    // Добавление слушателя события на кнопку "Замовити"
+    var buttonQuestion = document.querySelector(".button_offer__question");
+    var buttonOffer = document.querySelector(".button_offer");
+    var buttonFast = document.querySelector(".button_offer__fast");
+    buttonQuestion.addEventListener("click", function (event) {
+        event.preventDefault(); // Отменяем отправку формы
+
+        validatePhoneNumber1();
+    });
+    buttonOffer.addEventListener("click", function (event) {
+        event.preventDefault(); // Отменяем отправку формы
+
+        validatePhoneNumber2();
+    });
+    buttonFast.addEventListener("click", function (event) {
+        event.preventDefault(); // Отменяем отправку формы
+
+        validatePhoneNumber3();
+    });
+});
 

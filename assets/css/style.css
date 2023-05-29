@@ -1058,9 +1058,8 @@ body.block {
     padding: 0 26px;
 }
 
-.uphone {
+.uname {
     margin-bottom: 38px;
-    margin-top: 44px;
 }
 
 .uname::placeholder, .uphone::placeholder {
@@ -1095,10 +1094,11 @@ body.block {
     justify-content: center;
     align-items: center;
     transition: all ease 0.3s;
+    margin-top: 44px;
 }
 
 .button_offer:hover {
-   background: #0B3E75;
+    background: #0B3E75;
 }
 
 /*popup-thanks*/
@@ -1484,6 +1484,7 @@ body.block {
 
 
 .question_phone {
+    display: inline-block;
     background: #FFFFFF;
     font-family: 'Roboto';
     font-style: normal;
@@ -1497,6 +1498,65 @@ body.block {
     width: 397px;
     height: 66px;
     padding: 0 26px;
+    position: relative;
+}
+
+.phone_validate_question, .phone_validate_offer, .phone_validate_fast {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.phone_validate_question:after, .phone_validate_offer:after {
+    content: '';
+    background: url("../img/popups/validate_arrow.svg") no-repeat;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 23px;
+    left: 359px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.3s;
+}
+
+.phone_validate_fast:after {
+    content: '';
+    background: url("../img/popups/validate_arrow.svg") no-repeat;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 23px;
+    left: 238px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.3s;
+}
+
+.phone_validate_question.active:after, .phone_validate_offer.active:after, .phone_validate_fast.active:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.no_validate {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FC0101;
+    text-align: left;
+    padding-top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.phone_validate_question.active .no_validate, .phone_validate_offer.active .no_validate, .phone_validate_fast.active .no_validate {
+    padding-top: 13px;
+    opacity: 1;
+    visibility: visible;
 }
 
 .question_phone::placeholder {

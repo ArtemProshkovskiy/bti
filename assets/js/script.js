@@ -3,23 +3,6 @@ const languagePopup = document.querySelector('.menu-social__lang');
 const languages = document.querySelectorAll('.menu-social__lang-drop a');
 const body = document.querySelector('body');
 
-// Получаем все кнопки внутри элемента с классом "services_content__form_filter"
-var buttons = document.querySelectorAll('.services_content__form_filter button');
-
-// Добавляем обработчик события для каждой кнопки
-buttons.forEach(function(button) {
-  button.addEventListener('click', function() {
-    // Удаляем класс "active" у всех кнопок
-    buttons.forEach(function(btn) {
-      btn.classList.remove('active');
-    });
-
-    // Добавляем класс "active" на кнопку, на которую было нажато
-    this.classList.add('active');
-  });
-});
-
-
 languageButtons.forEach(function (languageButton) {
     languageButton.addEventListener('click', function (e) {
         languagePopup.classList.toggle('active');
@@ -122,24 +105,23 @@ const popup_thanks = document.querySelector('.popup_thanks.offer');
 const popup_fastThanks = document.querySelector('.popup_thanks.fast');
 const popup_questionThanks = document.querySelector('.popup_thanks.question');
 popup_thanksClose.forEach(item => {
-  item.addEventListener('click', function (e) {
-    e.preventDefault();
+    item.addEventListener('click', function (e) {
+        e.preventDefault();
 
-    if (popup_thanks.classList.contains('active')) {
-      popup_thanks.classList.remove('active');
-    }
+        if (popup_thanks.classList.contains('active')) {
+            popup_thanks.classList.remove('active');
+        }
 
-    if (popup_fastThanks.classList.contains('active')) {
-      popup_fastThanks.classList.remove('active');
-    }
-     if (popup_questionThanks.classList.contains('active')) {
-      popup_questionThanks.classList.remove('active');
-    }
+        if (popup_fastThanks.classList.contains('active')) {
+            popup_fastThanks.classList.remove('active');
+        }
+        if (popup_questionThanks.classList.contains('active')) {
+            popup_questionThanks.classList.remove('active');
+        }
 
-    document.body.classList.remove('block');
-  });
+        document.body.classList.remove('block');
+    });
 });
-
 
 
 popup_offerClose.addEventListener('click', function (e) {
@@ -148,12 +130,6 @@ popup_offerClose.addEventListener('click', function (e) {
     body.classList.remove('block');
 });
 
-button_offer.addEventListener('click', function (e) {
-    e.preventDefault();
-    popup_thanks.classList.add('active');
-    popup_offer.classList.remove('active');
-    body.classList.add('block');
-});
 
 document.addEventListener('DOMContentLoaded', function () {
     var inputs = document.querySelectorAll('.numberInput input');
@@ -198,13 +174,6 @@ popup_fastClose.addEventListener('click', function (e) {
     popup_fast.classList.remove('active');
 });
 
-popup_fastBtn.addEventListener('click', function (e) {
-    e.preventDefault();
-    popup_fastThanks.classList.add('active');
-    popup_fast.classList.remove('active');
-    body.classList.add('block');
-});
-
 
 const popup_questionClose = document.querySelector('.popup_question__close');
 const popup_question = document.querySelector('.popup_question')
@@ -213,7 +182,6 @@ const popup_questionBtn = document.querySelector('.button_offer__question')
 
 questionBtn.addEventListener('click', function (e) {
     e.preventDefault();
-    console.log(2)
     popup_question.classList.add('active');
     body.classList.add('block');
 });
@@ -223,12 +191,55 @@ popup_questionClose.addEventListener('click', function (e) {
     body.classList.remove('block');
 });
 
-popup_questionBtn.addEventListener('click', function (e) {
-    e.preventDefault();
-    popup_questionThanks.classList.add('active');
-    popup_question.classList.remove('active');
+// Функция для сброса reCAPTCHA перед каждой отправкой формы
+function resetRecaptcha() {
+  grecaptcha.reset();
+}
+
+var fast = function (token) {
+ popup_fastThanks.classList.add('active');
+    popup_fast.classList.remove('active');
     body.classList.add('block');
-});
+  console.log(fast);
+  resetRecaptcha();
+};
+var offer = function (token) {
+  popup_thanks.classList.add('active');
+    popup_offer.classList.remove('active');
+    body.classList.add('block');
+  console.log(offer);
+  resetRecaptcha();
+};
+var onClick = function (token) {
+  popup_questionThanks.classList.add('active');
+  popup_question.classList.remove('active');
+  body.classList.add('block');
+  console.log(true);
+  resetRecaptcha();
+};
+
+var onloadCallback = function () {
+  grecaptcha.render('button_offer__question', {
+    'sitekey': '6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj',
+    'callback': onClick
+  });
+};
+
+var onloadCallback2 = function () {
+  grecaptcha.render('button_offer', {
+    'sitekey': '6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj',
+    'callback': offer
+  });
+};
+var onloadCallback3 = function () {
+  grecaptcha.render('button_offer__fast', {
+    'sitekey': '6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj',
+    'callback': fast
+  });
+};
+
+
+
 
 (function () {
     const anchors = document.querySelectorAll('a[href*="#"]')

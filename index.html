@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Montserrat:wght@500&family=Roboto:wght@400;500&display=swap"
           rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -166,7 +167,7 @@
                 </div>
             </div>
         </section>
-            <section class="popup_offer">
+        <section class="popup_offer">
             <div class="popup_offer__content">
                 <a href="" class="popup_offer__close"><img src="assets/img/popups/close.svg" alt=""></a>
                 <h3 class="popup_offer__title">Онлайн замовлення <strong>тех пасопртв</strong></h3>
@@ -175,17 +176,7 @@
                     <input id="name" type="text" class="uname" name="uname" placeholder="Ваше ім’я ">
                     <label class="hidden_label" for="uphone">Телефон</label>
                     <input id="uphone" type="text" class="uphone" name="uphone" placeholder="Телефон">
-                    <label class="check_bot">
-                        <input class="checkbox-popup" name="allow" type="checkbox" required="">
-                        <div class="apply-button-checkbox">
-                            <div class="apply-button-checked">
-                                <img src="assets/img/popups/check_bot.svg"
-                                     alt="">
-                            </div>
-                        </div>
-                        <label class="check_bot__checkbox">Я не робот</label>
-                    </label>
-                    <button class="button_offer" type="submit">Замовити</button>
+                    <button class="g-recaptcha button_offer" data-sitekey="6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj" data-callback="offer">Замовити</button>
                 </form>
             </div>
         </section>
@@ -194,26 +185,25 @@
                 <div class="popup_fast__content">
                     <a href="" class="popup_fast__close"><img src="assets/img/popups/close.svg" alt=""></a>
                     <form class="popup_fast__content_form">
-                            <label class="text_time">Перетелефонуєм вам <br> <b>сьогодні точно в :</b> </label>
-                            <label class="hidden_label" for="hours">Час, години</label>
-                            <div class="numberInput hours">
-                                <input id="hours" min="0" value="01" max="24" type="number" class="hours"
-                                       name="minutes">
-                                <span class="arrow up"></span>
-                                <span class="arrow down"></span>
-                            </div>
-                            <label class="hidden_label" for="minutes">Час, минути</label>
-                            <div class="numberInput minutes">
-                                <input id="minutes" min="0" value="01" max="60" type="number" class="hours minutes"
-                                       name="minutes">
-                                <span class="arrow up"></span>
-                                <span class="arrow down"></span>
-                            </div>
-                            <label class="hidden_label" for="phone_fast">Телефон</label>
-                            <input id="phone_fast" type="text" class="phone_fast" name="phone_fast"
-                                   placeholder="Ваш телефон">
-
-                        <button class="button_offer__fast" type="submit">Чекаю дзвінка</button>
+                        <label class="text_time">Перетелефонуєм вам <br> <b>сьогодні точно в :</b> </label>
+                        <label class="hidden_label" for="hours">Час, години</label>
+                        <div class="numberInput hours">
+                            <input id="hours" min="0" value="01" max="24" type="number" class="hours"
+                                   name="minutes">
+                            <span class="arrow up"></span>
+                            <span class="arrow down"></span>
+                        </div>
+                        <label class="hidden_label" for="minutes">Час, минути</label>
+                        <div class="numberInput minutes">
+                            <input id="minutes" min="0" value="01" max="60" type="number" class="hours minutes"
+                                   name="minutes">
+                            <span class="arrow up"></span>
+                            <span class="arrow down"></span>
+                        </div>
+                        <label class="hidden_label" for="phone_fast">Телефон</label>
+                        <input id="phone_fast" type="text" class="phone_fast" name="phone_fast"
+                               placeholder="Ваш телефон">
+<button class="g-recaptcha button_offer__fast" data-sitekey="6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj" data-callback="fast">Чекаю дзвінка</button>
                     </form>
                 </div>
             </div>
@@ -224,20 +214,12 @@
                 <h3 class="popup_question__title">Залиште своє запитання</h3>
                 <form class="popup_offer__content_form">
                     <label class="hidden_label" for="question_phone">Телефон</label>
-                    <input id="question_phone" type="text" class="question_phone" name="question_phone" placeholder="Телефон">
+                    <input id="question_phone" type="text" class="question_phone" name="question_phone"
+                           placeholder="Телефон">
                     <label class="hidden_label" for="question_comment">Ваше запитання</label>
-                    <textarea id="question_comment" class="question_comment" name="question_comment" placeholder="Ваше запитання"></textarea>
-                    <label class="check_bot">
-                        <input class="checkbox-popup" name="allow" type="checkbox" required="">
-                        <div class="apply-button-checkbox">
-                            <div class="apply-button-checked">
-                                <img src="assets/img/popups/check_bot.svg"
-                                     alt="">
-                            </div>
-                        </div>
-                        <label class="check_bot__checkbox">Я не робот</label>
-                    </label>
-                    <button class="button_offer__question">Замовити</button>
+                    <textarea id="question_comment" class="question_comment" name="question_comment"
+                              placeholder="Ваше запитання"></textarea>
+<button class="g-recaptcha button_offer__question" data-sitekey="6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj" data-callback="onClick">Замовити</button>
                 </form>
             </div>
         </section>

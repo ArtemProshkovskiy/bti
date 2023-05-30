@@ -1,4 +1,3 @@
-
 const languageButtons = document.querySelectorAll('.menu-social__lang-button');
 const languagePopup = document.querySelector('.menu-social__lang');
 const languages = document.querySelectorAll('.menu-social__lang-drop a');
@@ -253,7 +252,6 @@ window.offer = offer;
 function offer(token) {
     var phoneNumber = uphoneNumberInput.value.trim().replace(/[() ]/g, '');
 
-
     if (regex.test(phoneNumber)) {
         console.log("Номер телефона действителен.");
         phonevalidateInputoffer.classList.remove('active');
@@ -265,7 +263,11 @@ function offer(token) {
         console.log("Номер телефона недействителен.");
         phonevalidateInputoffer.classList.add('active');
     }
-
+    var count = 0;
+    $(".g-recaptcha").each(function () {
+        grecaptcha.reset(count);
+        count++;
+    });
 
 }
 
@@ -275,6 +277,7 @@ var onloadCallback2 = function () {
         'callback': offer
     });
 };
+
 window.fast = fast;
 
 function fast(token) {
@@ -297,26 +300,26 @@ function fast(token) {
         count++;
     });
 
-    var onloadCallback3 = function () {
-        grecaptcha.render('button_offer__fast', {
-            'sitekey': '6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj',
-            'callback': fast
-        });
-    };
-
 }
-    $(document).ready(function () {
-        $("#question_phone").inputmask("+380(99) 999 99 99", {
-            placeholder: "_",
-            clearMaskOnLostFocus: false
-        });
-        $("#phone_fast").inputmask("+380(99) 999 99 99", {
-            placeholder: "_",
-            clearMaskOnLostFocus: false
-        });
-        $("#uphone").inputmask("+380(99) 999 99 99", {
-            placeholder: "_",
-            clearMaskOnLostFocus: false
-        });
+
+var onloadCallback3 = function () {
+    grecaptcha.render('button_offer__fast', {
+        'sitekey': '6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj',
+        'callback': fast
     });
+};
+$(document).ready(function () {
+    $("#question_phone").inputmask("+380(99) 999 99 99", {
+        placeholder: "_",
+        clearMaskOnLostFocus: false
+    });
+    $("#phone_fast").inputmask("+380(99) 999 99 99", {
+        placeholder: "_",
+        clearMaskOnLostFocus: false
+    });
+    $("#uphone").inputmask("+380(99) 999 99 99", {
+        placeholder: "_",
+        clearMaskOnLostFocus: false
+    });
+});
 

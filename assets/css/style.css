@@ -29,7 +29,7 @@ input::-ms-clear {
 }
 
 button {
-    cursor: poRoboto;
+    cursor: pointer;
     background: transparent;
 }
 
@@ -197,7 +197,7 @@ body.block {
 .menu-social__lang {
     position: relative;
     margin-left: 48px;
-    cursor: poRoboto;
+    cursor: pointer;
 }
 
 .menu-social__lang-button {
@@ -1285,7 +1285,7 @@ body.block {
     top: 0;
     right: 0;
     display: block;
-    cursor: poRoboto;
+    cursor: pointer;
     margin: 0 9px;
 }
 
@@ -1980,7 +1980,7 @@ body.block {
     background: url("../img/services/find_out.svg");
     width: 24px;
     height: 24px;
-    cursor: poRoboto;
+    cursor: pointer;
     z-index: 100;
 }
 

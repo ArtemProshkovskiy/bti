@@ -327,9 +327,13 @@ body.block {
     border: 1px solid #FFFFFF;
 }
 
-
+.offers .container {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .offers_title {
-    display: inline-block;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -339,6 +343,8 @@ body.block {
 
     text-align: center;
     color: #01101F;
+    width: 930px;
+   display: inline-block;
 }
 
 .offers_title strong {

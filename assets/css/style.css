@@ -1740,7 +1740,7 @@ body.block {
 }
 
 .about_information:last-child .about_information__content ul li {
-    border-bottom: 1px solid #01101F;
+    border-bottom: 1px solid rgba(1, 16, 31, 0.3);
 }
 
 .about__title_topic h2 {
@@ -1765,7 +1765,7 @@ body.block {
 .about_information__content_elem {
     display: flex;
     padding: 40px 0;
-    border-bottom: 1px solid #01101F;
+    border-bottom: 1px solid rgba(1, 16, 31, 0.3);
 }
 
 .about_information__content_elem:last-child {

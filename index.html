@@ -172,16 +172,18 @@
                 <a href="" class="popup_offer__close"><img src="assets/img/popups/close.svg" alt=""></a>
                 <h3 class="popup_offer__title">Онлайн замовлення <strong>тех пасопртв</strong></h3>
                 <form class="popup_offer__content_form">
-                    <label class="hidden_label" for="name">Ім'я</label>
-                    <input id="name" type="text" class="uname" name="uname" placeholder="Ваше ім’я ">
-                    <label class="hidden_label" for="uphone">Телефон</label>
+                    <label class="up__text_label" for="name">Ваше ім’я </label>
+                    <input id="name" type="text" class="uname" name="uname" placeholder="Олег Зінченко">
+                    <label class="up__text_label" for="uphone">Ваш телефон</label>
                     <label class="phone_validate_offer">
                         <input id="uphone" type="text" class="uphone" name="uphone" placeholder="Телефон">
                         <label class="no_validate">Некоректний номер телефону,спробуйте ще раз</label>
                     </label>
-                    <button class="g-recaptcha button_offer" data-sitekey="6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj"
-                            data-callback="offer">Замовити
-                    </button>
+                    <div class="wrapper__btn_from">
+                        <button class="g-recaptcha button_offer" data-sitekey="6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj"
+                                data-callback="offer">Замовити
+                        </button>
+                    </div>
                 </form>
             </div>
         </section>
@@ -224,18 +226,20 @@
                 <a href="" class="popup_question__close"><img src="assets/img/popups/close.svg" alt=""></a>
                 <h3 class="popup_question__title">Залиште своє запитання</h3>
                 <form class="popup_offer__content_form">
-                    <label class="hidden_label" for="question_phone">Телефон</label>
+                    <label class="up__text_label" for="question_phone">Ваш телефон</label>
                     <label class="phone_validate_question">
                         <input id="question_phone" type="text" class="question_phone" name="question_phone"
                                placeholder="Телефон">
                         <label class="no_validate">Некоректний номер телефону,спробуйте ще раз</label>
                     </label>
-                    <label class="hidden_label" for="question_comment">Ваше запитання</label>
+                    <label class="up__text_label comment" for="question_comment">Ваше запитання</label>
                     <textarea id="question_comment" class="question_comment" name="question_comment"
                               placeholder="Ваше запитання"></textarea>
-                    <button class="g-recaptcha button_offer__question"
-                            data-sitekey="6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj" data-callback="onClick">Замовити
-                    </button>
+                    <div class="wrapper__btn_from">
+                        <button class="g-recaptcha button_offer__question"
+                                data-sitekey="6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj" data-callback="onClick">Замовити
+                        </button>
+                    </div>
                 </form>
             </div>
         </section>

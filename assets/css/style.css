@@ -988,9 +988,14 @@ body.block {
 
 .popup_offer.active .popup_offer__content {
     width: 614px;
-    height: 535px;
+    height: 568px;
     visibility: visible;
     opacity: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .popup_offer__title {
@@ -1004,8 +1009,8 @@ body.block {
 
     color: #01101F;
 
-    margin-bottom: 37px;
-    margin-top: 88px;
+    margin-bottom: 45px;
+    margin-top: 50px;
     text-align: center;
     padding: 0 80px;
 }
@@ -1037,8 +1042,25 @@ body.block {
 .popup_offer__content_form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+.up__text_label.comment  {
+    margin-top: 18px;
+}
+.up__text_label {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+
+
+/* акцент */
+
+color: #0D4B8C;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 30px;
 }
 
 .hidden_label {
@@ -1047,7 +1069,6 @@ body.block {
     height: 0;
     width: 0;
 }
-
 .uname, .uphone {
     background: #FFFFFF;
     width: 397px;
@@ -1066,7 +1087,7 @@ body.block {
 }
 
 .uname {
-    margin-bottom: 38px;
+    margin-bottom: 15px;
 }
 
 .uname::placeholder, .uphone::placeholder {
@@ -1097,13 +1118,15 @@ body.block {
     background: #0D4B8C;
     width: 214px;
     height: 63px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: all ease 0.3s;
     margin-top: 44px;
 }
-
+.wrapper__btn_from {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .button_offer:hover {
     background: #0B3E75;
 }
@@ -1510,7 +1533,6 @@ body.block {
 
 .phone_validate_question, .phone_validate_offer, .phone_validate_fast {
     position: relative;
-
     display: flex;
     flex-direction: column;
 }
@@ -1546,6 +1568,7 @@ body.block {
     visibility: visible;
 }
 
+
 .no_validate {
     font-family: 'Roboto';
     font-style: normal;
@@ -1558,12 +1581,14 @@ body.block {
     padding-top: 0;
     opacity: 0;
     visibility: hidden;
+    max-height: 0;
 }
 
 .phone_validate_question.active .no_validate, .phone_validate_offer.active .no_validate, .phone_validate_fast.active .no_validate {
     padding-top: 13px;
     opacity: 1;
     visibility: visible;
+    max-height: 100%;
 }
 
 .question_phone::placeholder {
@@ -1598,7 +1623,6 @@ body.block {
     padding-top: 17px;
     padding-left: 26px;
     padding-right: 26px;
-    margin-top: 38px;
     margin-bottom: 37px;
     resize: none;
 }

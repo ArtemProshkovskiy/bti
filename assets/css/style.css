@@ -2342,14 +2342,14 @@ body.block {
         padding-top: 25px;
     }
 
-    .header_logo img, .footer_content__logo img{
+    .header_logo img, .footer_content__logo img {
         width: 90px;
         height: 84px;
     }
 
     .header_logo__text h1, .footer_content__text h1 {
         font-size: 35px;
-    line-height: 35px;
+        line-height: 35px;
         margin-bottom: 10px;
     }
 
@@ -2367,5 +2367,46 @@ body.block {
     }
 
     /*about*/
+    .about__title {
+        margin-top: 31px;
+        margin-bottom: 31px;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about__title h2 {
+        font-size: 17px;
+        line-height: 126.52%;
+        margin-bottom: 14px;
+    }
+
+    .about__title h3 {
+        font-size: 15px;
+        line-height: 126.52%;
+        text-align: center;
+        max-width: 200px;
+    }
+
+    .about__title_topic h2 {
+        font-size: 15px;
+        line-height: 126.52%;
+        padding: 17px 0;
+    }
+
+    .about_information__content_elem {
+        padding: 19px 0;
+    }
+
+    .about_information__content_elem ul li span {
+        font-size: 14px;
+        line-height: 126.52%;
+    }
+
+    .about_information__content_elem ul li p {
+        font-size: 14px;
+line-height: 126.52%;
+    }
 }

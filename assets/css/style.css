@@ -29,7 +29,7 @@ input::-ms-clear {
 }
 
 button {
-    cursor: pointer;
+    cursor: poRoboto;
     background: transparent;
 }
 
@@ -197,7 +197,7 @@ body.block {
 .menu-social__lang {
     position: relative;
     margin-left: 48px;
-    cursor: pointer;
+    cursor: poRoboto;
 }
 
 .menu-social__lang-button {
@@ -360,7 +360,7 @@ body.block {
 }
 
 .work_time__title {
-    font-family: 'Inter';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 35px;
@@ -414,7 +414,7 @@ body.block {
 }
 
 .information_title {
-    font-family: 'Inter';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 35px;
@@ -586,7 +586,7 @@ body.block {
 }
 
 .questions_title {
-    font-family: 'Inter';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 35px;
@@ -732,7 +732,7 @@ body.block {
 }
 
 .department_title {
-    font-family: 'Inter';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 35px;
@@ -1285,7 +1285,7 @@ body.block {
     top: 0;
     right: 0;
     display: block;
-    cursor: pointer;
+    cursor: poRoboto;
     margin: 0 9px;
 }
 
@@ -1669,7 +1669,7 @@ body.block {
 }
 
 .about__title h2 {
-    font-family: 'Inter';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 35px;
@@ -1886,7 +1886,7 @@ body.block {
 }
 
 .services_title h2 {
-    font-family: 'Inter';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 35px;
@@ -1980,7 +1980,7 @@ body.block {
     background: url("../img/services/find_out.svg");
     width: 24px;
     height: 24px;
-    cursor: pointer;
+    cursor: poRoboto;
     z-index: 100;
 }
 
@@ -2082,7 +2082,7 @@ body.block {
 .documents_title {
     /* заголовок */
 
-    font-family: 'Inter';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 35px;

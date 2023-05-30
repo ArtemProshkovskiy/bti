@@ -1,3 +1,4 @@
+
 const languageButtons = document.querySelectorAll('.menu-social__lang-button');
 const languagePopup = document.querySelector('.menu-social__lang');
 const languages = document.querySelectorAll('.menu-social__lang-drop a');
@@ -214,30 +215,15 @@ var phoneNumberInput = document.getElementById("question_phone");
 var fastNumberInput = document.getElementById("phone_fast");
 var uphoneNumberInput = document.getElementById("uphone");
 
-function validatePhoneNumber1() {
+window.onClick = onClick
+
+function onClick(token) {
     var phoneNumber = phoneNumberInput.value.trim().replace(/[() ]/g, '');
 
 
     if (regex.test(phoneNumber)) {
         console.log("Номер телефона действителен.");
         phonevalidate.classList.remove('active');
-
-        function onClick(token) {
-            var count = 0;
-            $(".g-recaptcha").each(function () {
-                grecaptcha.reset(count);
-                count++;
-            });
-        }
-
-// Определение onloadCallback1 глобально
-        function onloadCallback1() {
-            grecaptcha.render('button_offer__question', {
-                'sitekey': '6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj',
-                'callback': onClick
-            });
-        }
-
         popup_questionThanks.classList.add('active');
         popup_question.classList.remove('active');
         body.classList.add('block');
@@ -246,67 +232,58 @@ function validatePhoneNumber1() {
         console.log("Номер телефона недействителен.");
         phonevalidate.classList.add('active');
     }
+    var count = 0;
+    $(".g-recaptcha").each(function () {
+        grecaptcha.reset(count);
+        count++;
+    });
 }
 
-function validatePhoneNumber2() {
+
+// Определение onloadCallback1 глобально
+function onloadCallback1() {
+    grecaptcha.render('button_offer__question', {
+        'sitekey': '6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj',
+        'callback': onClick
+    });
+}
+
+window.offer = offer;
+
+function offer(token) {
     var phoneNumber = uphoneNumberInput.value.trim().replace(/[() ]/g, '');
 
 
     if (regex.test(phoneNumber)) {
         console.log("Номер телефона действителен.");
         phonevalidateInputoffer.classList.remove('active');
-
-
-        function offer(token) {
-            var count = 0;
-            $(".g-recaptcha").each(function () {
-                grecaptcha.reset(count);
-                count++;
-            });
-        }
-
-
-        var onloadCallback3 = function () {
-            grecaptcha.render('button_offer__fast', {
-                'sitekey': '6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj',
-                'callback': offer
-            });
-        };
-
         popup_thanks.classList.add('active');
         popup_offer.classList.remove('active');
         body.classList.add('block');
+
     } else {
         console.log("Номер телефона недействителен.");
         phonevalidateInputoffer.classList.add('active');
     }
+
+
 }
 
-function validatePhoneNumber3() {
+var onloadCallback2 = function () {
+    grecaptcha.render('button_offer', {
+        'sitekey': '6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj',
+        'callback': offer
+    });
+};
+window.fast = fast;
+
+function fast(token) {
     var phoneNumber = fastNumberInput.value.trim().replace(/[() ]/g, '');
 
 
     if (regex.test(phoneNumber)) {
         console.log("Номер телефона действителен.");
         phonevalidateInputfast.classList.remove('active');
-
-
-        function fast(token) {
-            var count = 0;
-            $(".g-recaptcha").each(function () {
-                grecaptcha.reset(count);
-                count++;
-            });
-        }
-
-
-        var onloadCallback3 = function () {
-            grecaptcha.render('button_offer__fast', {
-                'sitekey': '6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj',
-                'callback': fast
-            });
-        };
-
         popup_fastThanks.classList.add('active');
         popup_fast.classList.remove('active');
         body.classList.add('block');
@@ -314,41 +291,32 @@ function validatePhoneNumber3() {
         console.log("Номер телефона недействителен.");
         phonevalidateInputfast.classList.add('active');
     }
+    var count = 0;
+    $(".g-recaptcha").each(function () {
+        grecaptcha.reset(count);
+        count++;
+    });
+
+    var onloadCallback3 = function () {
+        grecaptcha.render('button_offer__fast', {
+            'sitekey': '6LdWhksmAAAAAMJnf3tydbO6ykp2Zwu-3SHjoxUj',
+            'callback': fast
+        });
+    };
+
 }
-
-
-$(document).ready(function () {
-    $("#question_phone").inputmask("+380(99) 999 99 99", {
-        placeholder: "_",
-        clearMaskOnLostFocus: false
+    $(document).ready(function () {
+        $("#question_phone").inputmask("+380(99) 999 99 99", {
+            placeholder: "_",
+            clearMaskOnLostFocus: false
+        });
+        $("#phone_fast").inputmask("+380(99) 999 99 99", {
+            placeholder: "_",
+            clearMaskOnLostFocus: false
+        });
+        $("#uphone").inputmask("+380(99) 999 99 99", {
+            placeholder: "_",
+            clearMaskOnLostFocus: false
+        });
     });
-    $("#phone_fast").inputmask("+380(99) 999 99 99", {
-        placeholder: "_",
-        clearMaskOnLostFocus: false
-    });
-    $("#uphone").inputmask("+380(99) 999 99 99", {
-        placeholder: "_",
-        clearMaskOnLostFocus: false
-    });
-
-    // Добавление слушателя события на кнопку "Замовити"
-    var buttonQuestion = document.querySelector(".button_offer__question");
-    var buttonOffer = document.querySelector(".button_offer");
-    var buttonFast = document.querySelector(".button_offer__fast");
-    buttonQuestion.addEventListener("click", function (event) {
-        event.preventDefault(); // Отменяем отправку формы
-
-        validatePhoneNumber1();
-    });
-    buttonOffer.addEventListener("click", function (event) {
-        event.preventDefault(); // Отменяем отправку формы
-
-        validatePhoneNumber2();
-    });
-    buttonFast.addEventListener("click", function (event) {
-        event.preventDefault(); // Отменяем отправку формы
-
-        validatePhoneNumber3();
-    });
-});
 

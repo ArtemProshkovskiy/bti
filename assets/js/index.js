@@ -160,9 +160,6 @@ popup_questionClose.addEventListener('click', function (e) {
     body.classList.remove('block');
 });
 
-
-
-
 var phonevalidate = document.querySelector('.phone_validate_question');
 var phonevalidateInputfast = document.querySelector('.phone_validate_fast');
 var phonevalidateInputoffer = document.querySelector('.phone_validate_offer');

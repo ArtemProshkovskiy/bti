@@ -75,19 +75,4 @@ menu_burgerBtn.addEventListener('click', function (e){
 });
 
 
-(function () {
-    const anchors = document.querySelectorAll('a[href*="#"]')
-    for (let anchor of anchors) {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault()
-            const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'
-            menu_burger.classList.remove('open');
-    body.classList.remove('block');
-    menu_burgerBtn.classList.remove('active')
-            document.querySelector(goto).scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
-        });
-    }
-})();
+

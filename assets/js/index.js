@@ -130,13 +130,17 @@ const popup_fastBtn = document.querySelector('.popup_fast .button_offer__fast')
 
 document.addEventListener('DOMContentLoaded', function () {
     setTimeout(function () {
+        if (window.innerWidth < 1120) {
+            body.classList.add('block');
+        }
         popup_fast.classList.add('active');
-    }, 15000);
+    }, 1000);
 });
 
 popup_fastClose.addEventListener('click', function (e) {
     e.preventDefault();
     popup_fast.classList.remove('active');
+    body.classList.remove('block');
 });
 
 

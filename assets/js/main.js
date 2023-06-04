@@ -33,3 +33,44 @@ languages.forEach(function (language) {
         }
     });
 });
+
+
+var dropdowns = document.getElementsByClassName("dropdown");
+for (var i = 0; i < dropdowns.length; i++) {
+    dropdowns[i].addEventListener("click", function () {
+        if (window.innerWidth < 788) {
+            return; // Если ширина окна меньше 788px, выходим из функции
+        }
+        this.classList.toggle("active");
+    });
+}
+
+var dropdownContent = document.querySelector('.dropdown-content');
+var phoneNumbers = dropdownContent.querySelectorAll('.dropdown-content .phone_number');
+var dropdownLink = document.querySelector('.btn_phone__dropdown .phone_number');
+var dropdownText = document.querySelector('.btn_phone__dropdown .phone_number');
+
+phoneNumbers.forEach(function (number) {
+    number.addEventListener('click', function (e) {
+        if (window.innerWidth < 788) {
+            return; // Если ширина окна меньше 788px, выходим из функции
+        }
+
+          const phoneNumberDropdown = dropdownText.innerText;
+        dropdownText.textContent = number.textContent;
+        number.textContent = phoneNumberDropdown;
+
+        // Заменяем href атрибут в btn_phone__dropdown
+        dropdownLink.href = number.href
+    });
+});
+
+const menu_burger = document.querySelector('.burger');
+const menu_burgerBtn = document.querySelector('.header_burger__button');
+
+menu_burgerBtn.addEventListener('click', function (e){
+    menu_burger.classList.toggle('open');
+    body.classList.toggle('block');
+    menu_burgerBtn.classList.toggle('active')
+});
+

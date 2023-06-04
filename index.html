@@ -17,10 +17,15 @@
 <div class="wrapper">
     <header class="header">
         <div class="container">
+            <div class="header_burger__button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <div class="header_logo">
                 <img src="assets/img/header/logo.png" alt="">
                 <div class="header_logo__text">
-                    <h1>КM БТІ Трьохсвятительська</h1>
+                    <h1><strong>КM БТІ</strong> Трьохсвятительська</h1>
                     <h2>Бюро технічної інвентаризації</h2>
                 </div>
             </div>
@@ -30,14 +35,36 @@
         <div class="container">
             <div class="header_content">
                 <nav>
-                    <ul>
-                        <li><a href="index.html">Головна</a></li>
-                        <li><a href="about.html">Про нас</a></li>
-                        <li><a href="services.html">Послуги</a></li>
-                        <li><a href="documents.html">Документи</a></li>
-                        <li><a href="#contact">Контакти</a></li>
-                    </ul>
-                    <a class="phone_number" href="tel:0987710426">(098) 771 04 26</a>
+                    <div class="burger">
+                        <div class="menu_burger">
+                            <ul class="header_content__menu">
+                                <li><a href="index.html">Головна</a></li>
+                                <li><a href="about.html">Про нас</a></li>
+                                <li><a href="services.html">Послуги</a></li>
+                                <li><a href="documents.html">Документи</a></li>
+                                <li><a href="#contact">Контакти</a></li>
+                            </ul>
+                            <div class="menu_burger__row">
+                                <div class="menu-social__phone">
+                                    <div class="dropdown">
+                                        <div class="btn_phone__dropdown">
+                                            <a class="phone_number" href="tel:0987710426">(098) 771 04 26</a>
+                                            <img src="assets/img/header/arrow.svg" alt="">
+                                        </div>
+                                        <div class="dropdown-content">
+                                            <a class="phone_number" href="tel:0957710426">(095) 771 04 26</a>
+                                            <a class="phone_number" href="tel:0737710426">(073) 771 04 26</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="social_link__burger">
+                                    <a href=""><img src="assets/img/information/gmail.svg" alt=""></a>
+                                    <a href=""><img src="assets/img/information/viber.svg" alt=""></a>
+                                    <a href=""><img src="assets/img/information/telegram.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="menu-social__lang">
                         <div class="menu-social__lang-button">
                             <span data-lang="ua">UA</span> <img
@@ -92,7 +119,7 @@
                         <a href="">замовити</a>
                     </div>
                     <div class="offers_content__block">
-                        <span data-offer="Готовності зносу об’єкта нерухомості">Готовність зносу об’єкта нерухомості</span>
+                        <span data-offer="Довідки про % готовнності/ зносу об’єкта нерухомості">Довідка про % готовнності/ зносу об’єкта нерухомості</span>
                         <a href="">замовити</a>
                     </div>
                 </div>
@@ -194,7 +221,8 @@
                     <form class="popup_fast__content_form">
                         <label class="text_time">Перетелефонуєм вам <br> <b>сьогодні точно в :</b> </label>
                         <label class="hidden_label" for="hours">Час, години</label>
-                        <div class="numberInput hours">
+                        <div class="numbers__row">
+                              <div class="numberInput hours">
                             <input id="hours" min="0" value="01" max="24" type="number" class="hours"
                                    name="minutes">
                             <span class="arrow up"></span>
@@ -206,6 +234,7 @@
                                    name="minutes">
                             <span class="arrow up"></span>
                             <span class="arrow down"></span>
+                        </div>
                         </div>
                         <label class="hidden_label" for="uphone">Телефон</label>
                         <label class="phone_validate_fast">
@@ -225,7 +254,7 @@
             <div class="popup_question__content">
                 <a href="" class="popup_question__close"><img src="assets/img/popups/close.svg" alt=""></a>
                 <h3 class="popup_question__title">Залиште своє запитання</h3>
-                <form class="popup_offer__content_form">
+                <form class="popup_questions__content_form">
                     <label class="up__text_label" for="question_phone">Ваш телефон</label>
                     <label class="phone_validate_question">
                         <input id="question_phone" type="text" class="question_phone" name="question_phone"
@@ -310,7 +339,7 @@
                 <div class="footer_content__logo">
                     <img src="assets/img/header/logo.png" alt="">
                     <div class="footer_content__text">
-                        <h1>КM БТІ Трьохсвятительська</h1>
+                        <h1><strong>КM БТІ</strong> Трьохсвятительська</h1>
                         <h2>Бюро технічної інвентаризації</h2>
                     </div>
                 </div>

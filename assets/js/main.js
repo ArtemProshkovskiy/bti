@@ -11,7 +11,7 @@ languageButtons.forEach(function (languageButton) {
 });
 languageButtons.forEach(function (languageButton) {
     document.addEventListener('click', function (e) {
-        if (e.target !== languageButton && e.target !== document.querySelector('.menu-social__lang-button span a') && e.target !== document.querySelector('.menu-social__lang-button img')) {
+        if (e.target !== languageButton && e.target !== document.querySelector('.menu-social__lang-button span') && e.target !== document.querySelector('.menu-social__lang-button img') && e.target !== document.querySelector('.menu-social__lang-button img')) {
             languagePopup.classList.remove('active');
         }
     })

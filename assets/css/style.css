@@ -3071,7 +3071,7 @@ body.block {
         top: -7px;
         left: 35px;
 
-        background: url("/assets/img/header/logo.png") no-repeat;
+        background: url("../img/header/logo.png") no-repeat;
         width: 32px;
         height: 30px;
         background-size: contain;
@@ -3412,7 +3412,7 @@ body.block {
         top: -7px;
         left: 35px;
 
-        background: url("/assets/img/header/logo.png") no-repeat;
+        background: url("../img/header/logo.png") no-repeat;
         width: 32px;
         height: 30px;
         background-size: contain;

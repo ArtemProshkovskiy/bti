@@ -79,6 +79,10 @@ body {
     overflow-x: hidden;
 }
 
+.wrapper {
+    overflow-x: hidden;
+}
+
 body.block {
     overflow: hidden;
 }

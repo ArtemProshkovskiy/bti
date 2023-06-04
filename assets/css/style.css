@@ -1442,13 +1442,13 @@ body.block {
 
 .arrow {
     height: 50%;
-    width: 16px;
+    width: 30px;
     position: absolute;
     top: 0;
     right: 0;
     display: block;
     cursor: pointer;
-    margin: 0 9px;
+    padding: 0 9px;
 }
 
 .arrow:after {

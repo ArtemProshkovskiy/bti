@@ -1399,6 +1399,10 @@ body.block {
     overflow: hidden;
 }
 
+.numbers__row {
+    display: flex;
+}
+
 .numberInput input {
     display: inline-block;
     width: 100%;

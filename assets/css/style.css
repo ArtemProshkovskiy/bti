@@ -356,7 +356,7 @@ body.block {
 
 /*offer*/
 .offers {
-    margin-top: 128px;
+    margin-top: 99px;
     margin-bottom: 134px;
 }
 
@@ -364,7 +364,7 @@ body.block {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 104px;
+    margin-top: 80px;
 }
 
 .offers_content__block {
@@ -3643,7 +3643,7 @@ body.block {
 
     /*document*/
     .documents {
-        padding: 0 20px 20px 20px;
+        padding: 0 20px 40px 20px;
     }
 
     .documents_title {

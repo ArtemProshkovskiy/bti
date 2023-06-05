@@ -3770,13 +3770,13 @@ body.block, .wrapper.block {
     }
 
     .header_content nav .header_content__menu li a, .header_content .phone_number {
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 15px;
+        line-height: 18px;
     }
 
 
     .header_content__menu li a {
-        margin-top: 20px;
+        margin-top: 18px;
     }
 
     .header_content__menu li:first-child a {
@@ -3792,7 +3792,7 @@ body.block, .wrapper.block {
     }
 
     .header_content .phone_number {
-        padding-bottom: 30px;
+        padding-bottom: 25px;
         opacity: 1;
     }
 
@@ -3880,7 +3880,7 @@ body.block, .wrapper.block {
     }
 
     .header_logo__text h1, .header_logo__text h1 strong {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 21px;
         width: 100%;
     }
@@ -3918,8 +3918,8 @@ body.block, .wrapper.block {
 
     /*offers*/
     .offers {
-        margin-top: 42px;
-        margin-bottom: 42px;
+        margin-top: 27px;
+        margin-bottom: 31px;
     }
 
     .offers_content {
@@ -3930,7 +3930,7 @@ body.block, .wrapper.block {
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
-        font-size: 13px;
+        font-size: 15px;
         line-height: 130%;
         /* or 17px */
 
@@ -3960,7 +3960,7 @@ body.block, .wrapper.block {
 
     .offers_content__block {
         width: 155px;
-        height: 150px;
+        height: 170px;
         margin-right: 20px;
         margin-bottom: 20px;
     }
@@ -3968,7 +3968,7 @@ body.block, .wrapper.block {
     .offers_content__block span {
         font-size: 14px;
         line-height: 158.52%;
-        padding: 0 5px;
+        padding: 0 20px;
         margin-bottom: 15px;
         text-transform: capitalize;
     }
@@ -3976,7 +3976,7 @@ body.block, .wrapper.block {
     .offers_content__block a {
         padding: 7px 16px;
         background: #FFFFFF;
-        font-size: 13px;
+        font-size: 14px;
         line-height: 158.52%;
     }
 
@@ -4007,7 +4007,7 @@ body.block, .wrapper.block {
     }
 
     .work_time__title {
-        font-size: 17px;
+        font-size: 20px;
         line-height: 126.52%;
         margin-bottom: 24px;
     }
@@ -4017,12 +4017,12 @@ body.block, .wrapper.block {
     }
 
     .work_time__content p {
-        font-size: 14px;
+        font-size: 15px;
         line-height: 126.52%;
     }
 
     .work_time__content p strong {
-        font-size: 14px;
+        font-size: 15px;
         line-height: 126.52%;
     }
 
@@ -4033,7 +4033,7 @@ body.block, .wrapper.block {
     }
 
     .information_title {
-        font-size: 17px;
+        font-size: 20px;
         line-height: 126.52%;
         margin-bottom: 27px;
     }
@@ -4068,7 +4068,7 @@ body.block, .wrapper.block {
     }
 
     .information_content__left a {
-        font-size: 14px;
+        font-size: 15px;
         line-height: 126.52%;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -4108,7 +4108,7 @@ body.block, .wrapper.block {
     }
 
     .information_content__right a {
-        font-size: 14px;
+        font-size: 15px;
         line-height: 126.52%;
         margin-left: 45px;
     }
@@ -4153,8 +4153,8 @@ body.block, .wrapper.block {
     }
 
     .accordion {
-        max-width: 336px;
-        font-size: 14px;
+        max-width: 355px;
+        font-size: 15px;
         line-height: 126.52%;
         padding-bottom: 11px;
         margin-bottom: 17px;
@@ -4188,10 +4188,10 @@ body.block, .wrapper.block {
     }
 
     .questions_button {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 126.52%;
-        width: 159px;
-        height: 49px;
+       width: 197px;
+height: 53px;
     }
 
     /*departament*/
@@ -4267,7 +4267,7 @@ body.block, .wrapper.block {
     }
 
     .footer_content__text h1, .footer_content__text h1 strong {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 21px;
         width: 100%;
     }
@@ -4476,7 +4476,7 @@ body.block, .wrapper.block {
     }
 
     .services_content__form_input input::placeholder {
-        font-size: 12px;
+        font-size: 16px;
         line-height: 126.52%;
     }
 
@@ -4660,7 +4660,7 @@ body.block, .wrapper.block {
     }
 
     .phone_fast::placeholder {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 126.52%;
     }
 
@@ -4717,7 +4717,7 @@ body.block, .wrapper.block {
     }
 
     .uname::placeholder, .uphone::placeholder {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 16px;
     }
 
@@ -4830,7 +4830,7 @@ body.block, .wrapper.block {
     }
 
     .question_phone::placeholder {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 126.52%;
     }
 
@@ -4870,7 +4870,7 @@ body.block, .wrapper.block {
     }
 
     .question_comment::placeholder {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 126.52%;
     }
 
@@ -4930,5 +4930,10 @@ body.block, .wrapper.block {
 
     .offers_content__block:nth-child(7), .offers_content__block:nth-child(8), .offers_content__block:nth-child(9) {
         margin-bottom: 20px;
+    }
+
+       .accordion {
+        font-size: 13px;
+           margin-bottom: 10px;
     }
 }

@@ -68,12 +68,13 @@ phoneNumbers.forEach(function (number) {
 
 const menu_burger = document.querySelector('.burger');
 const menu_burgerBtn = document.querySelector('.header_burger__button');
-
+const header = document.querySelector('.header');
 menu_burgerBtn.addEventListener('click', function (e){
     menu_burger.classList.toggle('open');
     body.classList.toggle('block');
     wrapper.classList.toggle('block');
     menu_burgerBtn.classList.toggle('active')
+    header.classList.toggle('active')
 });
 
 

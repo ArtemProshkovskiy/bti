@@ -2926,14 +2926,14 @@ body.block {
         display: flex;
         justify-content: space-between;
         background: #0d4b8c;
-        width: 100%;
+        width: 0;
         opacity: 0;
         visibility: hidden;
         height: 0px;
-        padding-top: 21px;
-        padding-bottom: 50px;
-        padding-left: 17px;
-        padding-right: 17px;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
         transition: all ease-in-out 0.3s;
     }
 
@@ -2941,6 +2941,11 @@ body.block {
         height: 240px;
         visibility: visible;
         opacity: 1;
+        width: 100%;
+         padding-top: 21px;
+        padding-bottom: 50px;
+        padding-left: 17px;
+        padding-right: 17px;
     }
 
     .menu_burger ul {

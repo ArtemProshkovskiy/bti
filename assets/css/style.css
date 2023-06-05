@@ -3630,8 +3630,8 @@ body.block, .wrapper.block {
         width: 59px;
         height: 40px;
         margin: 0;
-        padding-left: 11px;
-        padding-right: 0;
+        padding-left: 6px;
+        padding-right: 2px;
         padding-top: 11px;
     }
 
@@ -4148,7 +4148,7 @@ body.block, .wrapper.block {
 
     .questions_title {
         margin-bottom: 29px;
-        font-size: 17px;
+        font-size: 20px;
         line-height: 126.52%;
     }
 
@@ -4207,7 +4207,7 @@ height: 53px;
     }
 
     .department_title {
-        font-size: 17px;
+        font-size: 20px;
         line-height: 126.52%;
         text-align: center;
         margin-bottom: 25px;
@@ -4334,7 +4334,7 @@ height: 53px;
     }
 
     .about__title h2 {
-        font-size: 17px;
+        font-size: 20px;
         line-height: 126.52%;
         margin-bottom: 14px;
     }
@@ -4425,7 +4425,7 @@ height: 53px;
     }
 
     .services_title h2 {
-        font-size: 17px;
+        font-size: 20px;
         line-height: 126.52%;
         margin-bottom: 30px;
         margin-top: 40px;
@@ -4476,7 +4476,7 @@ height: 53px;
     }
 
     .services_content__form_input input::placeholder {
-        font-size: 16px;
+        font-size: 12px;
         line-height: 126.52%;
     }
 
@@ -4552,7 +4552,7 @@ height: 53px;
     .documents_title {
         padding-top: 40px;
         padding-bottom: 30px;
-        font-size: 17px;
+        font-size: 20px;
         line-height: 126.52%;
     }
 

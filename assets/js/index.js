@@ -274,16 +274,22 @@ var onloadCallback3 = function () {
 $(document).ready(function () {
     $("#question_phone").inputmask("+380(99) 999 99 99", {
         placeholder: "_",
-        clearMaskOnLostFocus: false
     });
     $("#phone_fast").inputmask("+380(99) 999 99 99", {
         placeholder: "_",
-        clearMaskOnLostFocus: false
     });
     $("#uphone").inputmask("+380(99) 999 99 99", {
         placeholder: "_",
-        clearMaskOnLostFocus: false
     });
+});
+
+var input = document.getElementById("name");
+input.addEventListener("focus", function() {
+  this.setAttribute("placeholder", "Олег Зинченко");
+});
+
+input.addEventListener("blur", function() {
+  this.setAttribute("placeholder", "Ваше имя");
 });
 
 (function () {

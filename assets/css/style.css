@@ -4627,6 +4627,19 @@ height: 53px;
         border-top: 10px solid rgba(13, 75, 140, 1);
     }
 
+    .arrow.up:active:after {
+    border-bottom: 10px solid rgba(13, 75, 140, 1);;
+}
+
+.arrow.down:hover:after {
+    border-top: 10px solid rgba(13, 75, 140, 1);;
+}
+
+.arrow:hover:after {
+    border-top-color: rgba(13, 75, 140, 1);;
+    border-bottom-color: rgba(13, 75, 140, 1);;
+}
+
     .numbers__row {
         margin-bottom: 24px;
     }

@@ -2926,7 +2926,7 @@ body.block {
         display: flex;
         justify-content: space-between;
         background: #0d4b8c;
-        width: 0;
+        width: 100%;
         opacity: 0;
         visibility: hidden;
         height: 0px;
@@ -2934,20 +2934,18 @@ body.block {
         padding-bottom: 0;
         padding-left: 0;
         padding-right: 0;
-        transform: translate(-100%, 0);
-        transition: all ease 0.3s;
+        transition: all ease 0.4s;
     }
 
     .burger.open .menu_burger {
         height: 240px;
         visibility: visible;
         opacity: 1;
-        width: 100%;
         padding-top: 21px;
         padding-bottom: 50px;
         padding-left: 17px;
         padding-right: 17px;
-        transform: translate(0, 0);
+         transition: all ease 0.4s;
     }
 
     .menu_burger__row {

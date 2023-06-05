@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
             body.classList.add('block');
         }
         popup_fast.classList.add('active');
-    }, 1000);
+    }, 15000);
 });
 
 popup_fastClose.addEventListener('click', function (e) {

@@ -33,6 +33,11 @@ input, button, textarea {
 
 input::-ms-clear {
     display: none;
+    -webkit-appearance: none;
+}
+
+input {
+    border-radius: 0;
 }
 
 button {
@@ -82,15 +87,11 @@ a {
 
 /*header*/
 
-body {
+body, .wrapper {
     overflow-x: hidden;
 }
 
-.wrapper {
-    overflow-x: hidden;
-}
-
-body.block {
+body.block, .wrapper.block {
     overflow: hidden;
 }
 
@@ -3789,7 +3790,7 @@ body.block {
     }
 
     .header_content .phone_number {
-        padding-bottom: 24px;
+        padding-bottom: 30px;
         opacity: 1;
     }
 
@@ -3967,6 +3968,7 @@ body.block {
         line-height: 158.52%;
         padding: 0 5px;
         margin-bottom: 15px;
+        text-transform: capitalize;
     }
 
     .offers_content__block a {
@@ -4072,8 +4074,16 @@ body.block {
         margin-left: 5px;
     }
 
+    .information_content__left a:hover:before {
+    background: url("../img/information/phone_number-after.svg") no-repeat;
+        width: 22px;
+        height: 22px;
+        background-size: cover;
+        top: -5px;
+}
+
     .information_content__left a:before {
-        background-size: contain;
+        background-size: cover;
         width: 22px;
         height: 22px;
         left: -36px;

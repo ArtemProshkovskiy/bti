@@ -2,6 +2,7 @@ const languageButtons = document.querySelectorAll('.menu-social__lang-button');
 const languagePopup = document.querySelector('.menu-social__lang');
 const languages = document.querySelectorAll('.menu-social__lang-drop a');
 const body = document.querySelector('body');
+const wrapper = document.querySelector('.wrapper');
 
 languageButtons.forEach(function (languageButton) {
     languageButton.addEventListener('click', function (e) {
@@ -71,6 +72,7 @@ const menu_burgerBtn = document.querySelector('.header_burger__button');
 menu_burgerBtn.addEventListener('click', function (e){
     menu_burger.classList.toggle('open');
     body.classList.toggle('block');
+    wrapper.classList.toggle('block');
     menu_burgerBtn.classList.toggle('active')
 });
 

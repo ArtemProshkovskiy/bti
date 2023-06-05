@@ -59,6 +59,7 @@ for (var e = 0; e < links_offer.length; e++) {
         var dataOffer = this.parentNode.querySelector('span').getAttribute('data-offer');
         popup_offer.classList.add('active');
         body.classList.add('block');
+        wrapper.classList.add('block');
         popup_offerTxt.innerText = dataOffer;
     });
 }
@@ -84,7 +85,8 @@ popup_thanksClose.forEach(item => {
             popup_questionThanks.classList.remove('active');
         }
 
-        document.body.classList.remove('block');
+        body.classList.remove('block');
+         wrapper.classList.remove('block');
     });
 });
 
@@ -93,6 +95,7 @@ popup_offerClose.addEventListener('click', function (e) {
     e.preventDefault();
     popup_offer.classList.remove('active');
     body.classList.remove('block');
+     wrapper.classList.remove('block');
 });
 
 
@@ -132,6 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
     setTimeout(function () {
         if (window.innerWidth < 1120) {
             body.classList.add('block');
+             wrapper.classList.add('block');
         }
         popup_fast.classList.add('active');
     }, 15000);
@@ -141,6 +145,7 @@ popup_fastClose.addEventListener('click', function (e) {
     e.preventDefault();
     popup_fast.classList.remove('active');
     body.classList.remove('block');
+     wrapper.classList.remove('block');
 });
 
 
@@ -153,11 +158,13 @@ questionBtn.addEventListener('click', function (e) {
     e.preventDefault();
     popup_question.classList.add('active');
     body.classList.add('block');
+     wrapper.classList.add('block');
 });
 popup_questionClose.addEventListener('click', function (e) {
     e.preventDefault();
     popup_question.classList.remove('active');
     body.classList.remove('block');
+     wrapper.classList.remove('block');
 });
 
 var phonevalidate = document.querySelector('.phone_validate_question');
@@ -180,7 +187,7 @@ function onClick(token) {
         popup_questionThanks.classList.add('active');
         popup_question.classList.remove('active');
         body.classList.add('block');
-
+ wrapper.classList.add('block');
     } else {
         console.log("Номер телефона недействителен.");
         phonevalidate.classList.add('active');
@@ -212,6 +219,7 @@ function offer(token) {
         popup_thanks.classList.add('active');
         popup_offer.classList.remove('active');
         body.classList.add('block');
+         wrapper.classList.add('block');
 
     } else {
         console.log("Номер телефона недействителен.");
@@ -244,6 +252,7 @@ function fast(token) {
         popup_fastThanks.classList.add('active');
         popup_fast.classList.remove('active');
         body.classList.add('block');
+         wrapper.classList.add('block');
     } else {
         console.log("Номер телефона недействителен.");
         phonevalidateInputfast.classList.add('active');
@@ -283,7 +292,8 @@ $(document).ready(function () {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             menu_burger.classList.remove('open');
-    body.classList.remove('block');
+    body.classList.remove('block')
+     wrapper.classList.remove('block');
     menu_burgerBtn.classList.remove('active')
             const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'
             document.querySelector(goto).scrollIntoView({

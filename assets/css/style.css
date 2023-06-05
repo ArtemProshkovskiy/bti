@@ -4645,7 +4645,7 @@ height: 53px;
     }
 
     .phone_fast {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 126.52%;
         padding-left: 11px;
         width: 204px;
@@ -4653,22 +4653,22 @@ height: 53px;
     }
 
     .phone_fast::-webkit-input-placeholder {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 126.52%;
     }
 
     .phone_fast::-moz-placeholder {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 126.52%;
     }
 
     .phone_fast:-ms-input-placeholder {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 126.52%;
     }
 
     .phone_fast::-ms-input-placeholder {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 126.52%;
     }
 
@@ -4681,7 +4681,7 @@ height: 53px;
         margin-top: 25px;
         width: 204px;
         height: 50px;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 126.52%;
     }
 
@@ -4704,28 +4704,28 @@ height: 53px;
     .uname, .uphone {
         width: 204px;
         height: 44px;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 16px;
         padding-left: 20px;
     }
 
     .uname::-webkit-input-placeholder, .uphone::-webkit-input-placeholder {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 16px;
     }
 
     .uname::-moz-placeholder, .uphone::-moz-placeholder {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 16px;
     }
 
     .uname:-ms-input-placeholder, .uphone:-ms-input-placeholder {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 16px;
     }
 
     .uname::-ms-input-placeholder, .uphone::-ms-input-placeholder {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 16px;
     }
 
@@ -4812,7 +4812,7 @@ height: 53px;
         width: 209px;
         height: 44px;
         padding-left: 17px;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 126.52%;
         margin-bottom: 0;
     }
@@ -4823,22 +4823,22 @@ height: 53px;
     }
 
     .question_phone::-webkit-input-placeholder {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 126.52%;
     }
 
     .question_phone::-moz-placeholder {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 126.52%;
     }
 
     .question_phone:-ms-input-placeholder {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 126.52%;
     }
 
     .question_phone::-ms-input-placeholder {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 126.52%;
     }
 
@@ -4853,7 +4853,7 @@ height: 53px;
         width: 209px;
         height: 102px;
 
-        font-size: 14px;
+        font-size: 16px;
         line-height: 126.52%;
         margin: 0 auto;
     }
@@ -4863,17 +4863,17 @@ height: 53px;
     }
 
     .question_comment::-webkit-input-placeholder {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 126.52%;
     }
 
     .question_comment::-moz-placeholder {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 126.52%;
     }
 
     .question_comment:-ms-input-placeholder {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 126.52%;
     }
 
@@ -4890,7 +4890,7 @@ height: 53px;
     .button_offer__question {
         width: 209px;
         height: 44px;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 126.52%;
         margin-top: 20px;
     }
